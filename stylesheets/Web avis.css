@@ -1,0 +1,59 @@
+/*Text*/
+
+h1{
+    font-family: Exo;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: #FD925C;
+    background-color: #462069;
+    }
+    
+    h3{
+    font-family: Exo;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: #FD925C;
+    background-color: #462069; 
+    }
+    
+    p{
+        font-family: JetBrains Mono;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #DA98F1;
+        border: 1px solid #000000;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    }
+    
+    /*Body main color*/
+    body{
+        
+        background-color: #462069;
+        color: #462069;
+        max-width: 400px;
+    }
+    
+    .box{
+        max-width: 100%;
+
+    }
+    .box1{
+        width: 100%;
+    }
+
+        
+    /**/

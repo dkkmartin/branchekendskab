@@ -1,0 +1,71 @@
+/*Text*/
+
+h1 {
+  
+  font-family: Exo;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: 0em;
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: #fd925c;
+  background-color: #462069;
+}
+
+h3 {
+  font-family: Exo;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: #fd925c;
+  background-color: #462069;
+}
+
+p {
+  font-family: JetBrains Mono;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #da98f1;
+  border: 1px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/*Body main color*/
+body {
+  background-color: #462069;
+  width: 400px;
+  
+}
+
+.box {
+  border-radius: black 1px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.boxen{
+    
+    max-width: 320px;
+    
+}
+
+main,
+header,
+footer {
+  max-width: 400px;
+  width: 100%;
+}
+/**/

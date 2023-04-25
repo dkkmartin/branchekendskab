@@ -1,0 +1,155 @@
+#wrapper {
+    max-width: 430px;
+}
+
+section {
+    background-color: #462069;
+}
+
+
+.headline {
+    color: #FD925C;
+    font-size: 40px;
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    margin: 88px 74px 38px 56px;
+
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+}
+
+.body {
+    text-align: center;
+    color: #FD925C;
+    font-size: 16px;
+    font-family: 'JetBrains Mono', monospace;
+    color: #DA98F1;
+
+}
+
+.del1text{
+
+    width: 300px;
+    height: 319px;
+    margin: 38px 71px 33px 59px;
+}
+
+.del1 img {
+    margin: 0px 74px 0px 59px;
+    width: 297px;
+    height: 297px;
+}
+
+.del1 hr{
+border: 6px 65px 0px 65px;
+width: 300px;
+height: 0x;
+border: 1px solid #000;
+}
+
+.headline2{
+    color: #FD925C;
+    font-size: 30px;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 25px 74px 38px 56px;
+
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+
+
+}
+
+.del2text{
+margin: 39px 71px 36px 59px;
+}
+
+.del2 img{ 
+    margin: 36px 64px 36px 63px;
+}
+
+.del2 hr{
+    border: 0px 65px 40px 65px;
+width: 300px;
+height: 0x;
+border: 1px solid #000;
+}
+
+.headline3{
+    margin: 40px 66px 39px 64px;
+    color: #FD925C;
+    font-size: 26px;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+
+}
+
+.del3text{
+    width: 293.16px;
+height: 400.25px;
+margin: 40px 64px 38px 73px;
+}
+
+.del3 img{
+    margin: 38px 71px 42px 70px;
+}
+
+.del3 hr{
+    border: 40px 65px 66px 65px;
+    width: 300px;
+    height: 0x;
+    border: 1px solid #000;    
+}
+
+.headline4{
+    width: 279px;
+    height: 40px;
+    color: #FD925C;
+    font-size: 26px;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+   margin: 40px 66px 39px 64px;
+    
+    
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+
+}
+
+.del4text{
+margin: 41px 65px 84px 65px;
+width: 300px;
+height: 339px;
+}
+
+
+@media only screen and (min-width: 1000px){
+#wrapper{
+max-width: 1440px;    
+}
+
+.headline{
+max-width: 979.41px;
+max-height: 82px;
+font-size: max( 60px);
+}
+
+section p{
+    font-size: max(42px);
+    line-height: 55px;
+    margin-left: 0 auto;
+    margin-right: 0 auto 
+}
+
+.del1 img{
+    max-height: 621px;
+    max-width: 621px;
+}
+}

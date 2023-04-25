@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+
+img 
+{
+  display: block;
+  width: 100%;
+}
+
+body
+{
+  background-color: #462069;
+}
+
+#wrapper
+{
+    
+    border: solid 1px red;/* for at kunne se wrappers areal*/
+    
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header {
+  background: linear-gradient(90deg, #EDC4DE 0%, #ECC4DE 41.17%, #ECC2DD 48.05%, #E9B7DA 56.67%, #E4A7D7 72.45%, #E4A6D7 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
+
+.header__logo__con {
+  max-width: 100%;
+}
+
+.header__image {
+  width: 100%;
+}
+
+
+
+
+
+main 
+{
+    max-width: 430px;
+}
+
+footer 
+{
+    background: #140E26;
+    height: 90px;
+    display: flex;
+
+    border: solid 1px rgb(0, 186, 0);/*for at man kan se footer'ens areal*/
+}
+
+footer h4
+{
+    color: #999;
+    font-family: 'Exo', sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    border: solid 1px rgb(136, 255, 136);
+    width: 60%;
+}
+
+footer i
+{
+    color: #fd925c;
+    border: solid 1px rgb(0, 255, 0);
+}
+
+h1, h2, h3
+{
+  font-family: 'Exo', sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: #FD925C;
+}
+
+p
+{
+  font-family: 'JetBrains Mono', monospace;
+  color: #da98f1;
+   
+}
