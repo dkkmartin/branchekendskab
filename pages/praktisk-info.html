@@ -1,84 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../stylesheets/Praktiske info.css">
-    <link rel="stylesheet" href="../stylesheets/home.css">
-    <script src="https://kit.fontawesome.com/a385fe5f85.js" crossorigin="anonymous"></script>
-   
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../stylesheets/info.css" />
+
+    <script src="../js/burgerMenu.js" defer></script>
     <title>Home</title>
-</head>
-<body>
-   
-        <header>
-            <header class="header">
-                <div class="header__logo__con">
-                  <img class="header__image" src="../images/logo.webp" alt="" />
-                </div>
-                <div class="header__menu__con">
-                  <img class="header__image" src="../images/Menu.svg" alt="" />
-                </div>
-              </header>
-        </header>
-
-
-        <main>
-             <div id="wrapper">
-            <section class="Praktisk">
-                <h1>Praktisk info</h1>
-                <img class="high" src="../images/High_vector_illustration_isometric_school_purple_dark_blue_oran_d36c00ca-ed4c-4bae-be1a-40b3e349f700(1) 1.png"
-                    alt="">
-                <p>Der er flere muligheder for at tage uddannelsen som webudvikler,
-                    herunder erhvervsskoler, universiteter, højskoler og online uddannelsesplatforme.
-                    Det er vigtigt at vælge en pålidelig og anerkendt uddannelsesudbyder.</p>
-            </section>
-       
-            <section class="steder">
-                <h2>Uddannelsessteder</h2>
-                <p>Next uddannelse København<br>
-                    Roskilde Tekniske skole<br>
-                    HANSENBERG<br>
-                    AARHUS TECH<br>
-                    Viden Djurs,Medie<br>
-                    Medieskolerne,Viborg Mediecenter<br>
-                    TECHOLLEGE Technology<br></p>
-            </section>
-          <broder>
-            <section class="fakta">
-                <h2>Fakta</h2>
-                <p>Uddannelsen som webudvikler varer 1 år og 9 måneder. Adgangskravene til grundforløbet er en
-                    afgangseksamen fra folkeskolen med mindst karakteren 2,0 i dansk og matematik. Der er specifikke
-                    krav ved overgangen til hovedforløbet. Uddannelsen foregår udelukkende på skole og finansieres
-                    gennem SU (Statens Uddannelsesstøtte). Efter endt uddannelse har du adgang til få videregående
-                    uddannelser.</p>
-            </section>
-         
-            <section class="optagelse">
-                <h2>Optagelse /Ansøgning</h2>
-                <p>Hvis man kommer direkte fra 9 eller 10 kalsse kan man søge ind på optagelse.dk for at søge ind på
-                    udannelsen.Hvis du er gået ud af 9 eller 10 klasse og er under 25år kan man søg ind på grundforløb 1
-                    eller 2 ind på optagelse.dk
-                </p>
-            </section>
-
-            <img src="../images/bashhh_imagiine_a_purple_image_of_a_person_filling_a_form_on_a__0007574f-fad0-4ca3-b0e0-dbf7394470f4 1(2)(1) 1.png"
-            alt="">
-        </main>
-
-        <footer>
-            <i class ="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <p>Dette er et skoleprojekt</p>
-            <p>Lavet for</p>
-            <p>NEXT Uddannelsen</p>
-            <p>København</p>
-            <p>Copenhagen, Denmark</p>
-            <i class="fa-brands fa-square-instagram"></i>
-            <i class="fa-brands fa-square-twitter"></i>
-        </footer>
-    </div><!--wrapper end-->
-</body>
-
+  </head>
+  <body>
+    <header>
+      <header class="header">
+        <div class="header__logo__con">
+          <img class="header__image" src="../images/logo.webp" alt="" />
+        </div>
+        <div class="header__menu__con">
+          <img class="header__image" src="../images/Menu.svg" alt="" />
+        </div>
+        <nav class="container">
+          <img class="close" src="../images/Close.png" alt="closingButton" />
+          <ul>
+            <a href="../index.html"><button class="forsideMenuKnap">Forside</button></a>
+            <a href="../pages/hvadlaverman.html"><button>Hvad laver man</button></a>
+            <a href="../pages/praktisk-info.html"><button>Praktisk info</button></a>
+            <a href="../pages/jobmuligheder.html"><button>Job</button></a>
+            <a href="../pages/eksempler.html"><button>Eksempler</button></a>
+          </ul>
+        </nav>
+      </header>
+      <header class="header__desktop">
+        <nav class="header__desktop__nav">
+          <div class="header__desktop__logo__con">
+            <img class="header__desktop__logo" src="../images/logo.webp" alt="logo" />
+          </div>
+          <ul class="header__desktop__ul">
+            <li><a class="header__desktop__link" href="../index.html">Forside</a></li>
+            <li>
+              <a class="header__desktop__link" href="../pages/hvadlaverman.html">Hvad laver man</a>
+            </li>
+            <li>
+              <a class="header__desktop__link" href="../pages/praktisk-info.html">Praktisk info</a>
+            </li>
+            <li><a class="header__desktop__link" href="../pages/jobmuligheder.html">Job</a></li>
+            <li><a class="header__desktop__link" href="../pages/eksempler.html">Eksempler</a></li>
+          </ul>
+        </nav>
+      </header>
+    </header>
+    <main>
+      <section class="Praktisk">
+        <div class="section__text__con">
+          <h1 class="title--big">Praktisk info</h1>
+          <p>
+            Der er flere muligheder for at tage uddannelsen som webudvikler, herunder
+            erhvervsskoler, universiteter, højskoler og online uddannelsesplatforme. Det er vigtigt
+            at vælge en pålidelig og anerkendt uddannelsesudbyder.
+          </p>
+        </div>
+        <div class="section__image__con">
+          <img
+            class="high"
+            src="../images/High_vector_illustration_isometric_school_purple_dark_blue_oran_d36c00ca-ed4c-4bae-be1a-40b3e349f700(1) 1.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="steder">
+        <div class="fakta">
+          <h2>Fakta</h2>
+          <p>
+            Uddannelsen som webudvikler varer 1 år og 9 måneder. Adgangskravene til grundforløbet er
+            en afgangseksamen fra folkeskolen med mindst karakteren 2,0 i dansk og matematik. Der er
+            specifikke krav ved overgangen til hovedforløbet. Uddannelsen foregår udelukkende på
+            skole og finansieres gennem SU (Statens Uddannelsesstøtte). Efter endt uddannelse har du
+            adgang til få videregående uddannelser.
+          </p>
+        </div>
+        <div class="box__con">
+          <h2 class="box__title">Uddannelsessteder</h2>
+          <p>
+            Next uddannelse København<br />
+            Roskilde Tekniske skole<br />
+            HANSENBERG<br />
+            AARHUS TECH<br />
+            Viden Djurs,Medie<br />
+            Medieskolerne,Viborg Mediecenter<br />
+            TECHOLLEGE Technology<br />
+          </p>
+        </div>
+      </section>
+      <section class="optagelse">
+        <div class="section__text__con2">
+          <h2>Optagelse</h2>
+          <p>
+            Hvis man kommer direkte fra 9 eller 10 kalsse kan man søge ind på optagelse.dk for at
+            søge ind på udannelsen.Hvis du er gået ud af 9 eller 10 klasse og er under 25år kan man
+            søg ind på grundforløb 1 eller 2 ind på optagelse.dk
+          </p>
+        </div>
+        <div class="section__image__con">
+          <img
+            src="../images/bashhh_imagiine_a_purple_image_of_a_person_filling_a_form_on_a__0007574f-fad0-4ca3-b0e0-dbf7394470f4 1(2)(1) 1.png"
+            alt=""
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="https://www.facebook.com/" target="_blank"
+        ><img class="icons1" src="../images/Facebook.png" alt="Facebookicon"
+      /></a>
+      <a href="https://www.linkedin.com/" target="_blank"
+        ><img class="icons1" src="../images/LinkedIn.png" alt="LinkedInicon"
+      /></a>
+      <h4>Dette er et skoleprojekt Lavet for NEXT Uddannelsen København Copenhagen, Denmark</h4>
+      <a href="https://www.instagram.com/" target="_blank"
+        ><img class="icons2" src="../images/Instagram.png" alt="Instagramicon"
+      /></a>
+      <a href="https://www.twitter.com/" target="_blank"
+        ><img class="icons2" src="../images/Twitter.png" alt="Twittericon"
+      /></a>
+    </footer>
+  </body>
 </html>

@@ -1,155 +1,235 @@
-#wrapper {
-    max-width: 430px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-section {
-    background-color: #462069;
+body {
+  background-color: #462069;
 }
 
+footer {
+  background: #140e26;
+  height: 90px;
+  display: flex;
+  justify-content: center; /* horizontally center items */
+  align-items: center; /* vertically center items */
+  text-align: center;
+}
 
-.headline {
-    color: #FD925C;
-    font-size: 40px;
-    font-family: 'Exo';
-    font-style: normal;
-    font-weight: 700;
-    text-align: center;
-    margin: 88px 74px 38px 56px;
+footer h4 {
+  color: #999;
+  font-family: 'Exo', sans-serif;
+  text-decoration: none;
+  font-size: 12px;
+  max-width: 140px;
+  word-break: normal;
+}
 
--webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: black;
+footer img {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px; /* add some space between icons and text */
+}
+
+.header {
+  background-color: #462069;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: #462069;
+  display: none;
+}
+
+button {
+  text-align: center;
+  background-color: #583678;
+  color: #fd925c;
+  font-family: 'Exo', sans-serif;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px #000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  border: solid 2px #000;
+  width: 331px;
+  height: 94px;
+  font-weight: 700;
+}
+
+button:active {
+  background-color: hsla(271, 38%, 34%, 0.4);
+  color: hsla(20, 98%, 68%, 0.4);
+}
+
+.close {
+  height: 39px;
+  width: 39px;
+  margin-left: 90%;
+  cursor: pointer;
+}
+.close:active {
+  background-color: red;
+}
+
+.container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
 }
 
 .body {
-    text-align: center;
-    color: #FD925C;
-    font-size: 16px;
-    font-family: 'JetBrains Mono', monospace;
-    color: #DA98F1;
-
+  color: #fd925c;
+  font-size: 16px;
+  font-family: 'JetBrains Mono', monospace;
+  color: #da98f1;
 }
 
-.del1text{
-
-    width: 300px;
-    height: 319px;
-    margin: 38px 71px 33px 59px;
+.headline {
+  color: #fd925c;
+  font-size: 50px;
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 700;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
-.del1 img {
-    margin: 0px 74px 0px 59px;
-    width: 297px;
-    height: 297px;
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.del1 hr{
-border: 6px 65px 0px 65px;
-width: 300px;
-height: 0x;
-border: 1px solid #000;
+main {
+  padding: 5em 0;
 }
 
-.headline2{
-    color: #FD925C;
-    font-size: 30px;
-    font-family: 'Exo', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    margin: 25px 74px 38px 56px;
-
--webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: black;
-
-
+.del4 {
+  border: none;
 }
 
-.del2text{
-margin: 39px 71px 36px 59px;
+.header__desktop {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  width: 99%;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
 }
 
-.del2 img{ 
-    margin: 36px 64px 36px 63px;
+.body section {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5em;
 }
 
-.del2 hr{
-    border: 0px 65px 40px 65px;
-width: 300px;
-height: 0x;
-border: 1px solid #000;
+.body section:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
-.headline3{
-    margin: 40px 66px 39px 64px;
-    color: #FD925C;
-    font-size: 26px;
-    font-family: 'Exo', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    
--webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: black;
-
+.del1text,
+.del2text,
+.del3text,
+.del4text {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  flex: 2;
 }
 
-.del3text{
-    width: 293.16px;
-height: 400.25px;
-margin: 40px 64px 38px 73px;
+.section__image__con {
+  max-width: 100%;
+  flex: 1;
 }
 
-.del3 img{
-    margin: 38px 71px 42px 70px;
+.section__image__con img {
+  width: 100%;
 }
 
-.del3 hr{
-    border: 40px 65px 66px 65px;
-    width: 300px;
-    height: 0x;
-    border: 1px solid #000;    
-}
+@media only screen and (min-width: 1000px) {
+  #wrapper {
+    max-width: 1440px;
+  }
 
-.headline4{
-    width: 279px;
-    height: 40px;
-    color: #FD925C;
-    font-size: 26px;
-    font-family: 'Exo', sans-serif;
-    font-weight: bold;
-   margin: 40px 66px 39px 64px;
-    
-    
--webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: black;
-
-}
-
-.del4text{
-margin: 41px 65px 84px 65px;
-width: 300px;
-height: 339px;
-}
-
-
-@media only screen and (min-width: 1000px){
-#wrapper{
-max-width: 1440px;    
-}
-
-.headline{
-max-width: 979.41px;
-max-height: 82px;
-font-size: max( 60px);
-}
-
-section p{
-    font-size: max(42px);
-    line-height: 55px;
-    margin-left: 0 auto;
-    margin-right: 0 auto 
-}
-
-.del1 img{
+  .del1 img {
     max-height: 621px;
     max-width: 621px;
+  }
 }
+
+@media only screen and (min-width: 1000px) {
+  .header {
+    display: none;
+  }
+
+  .header__desktop {
+    display: block;
+  }
+
+  .header__desktop__nav {
+    display: flex;
+  }
+
+  .header__desktop__ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    font-family: 'Exo', sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: #fd925c;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .header__desktop__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .header__desktop__logo__con {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding: 0.5em 1em;
+    max-width: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .body {
+    padding-top: 7em;
+  }
+
+  section {
+    max-width: 1000px;
+  }
+
+  h1,
+  h2 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 20px;
+  }
 }

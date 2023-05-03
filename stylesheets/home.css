@@ -1,79 +1,126 @@
- 
- 
- /* ----slider---- */
+/* ----slider---- */
 
- .gallery-grid, .slider.gallery-grid
- {
-     display: grid;
-     align-items: center;
-     justify-content: center;
-     gap: 1em;
- }
- 
- .gallery-grid
- {
-     width: 100%;
-     grid-template-columns: repeat(3, 1fr);
-     padding: 0em 0em;
- }
- 
- .slider-grid
- {
-     grid-column: 2/3;
-     display: grid;
-     grid-template-columns: 30px auto 30px;
-     grid-template-rows: 1fr;
-     justify-items: stretch;
-     align-items: center;
- }
- 
- #back, #next
- {
-   border: 1px solid red;
-   border-radius: 10%;
-   width: 20px;
- }
- 
- #back
- {
-     justify-self: start;
-     grid-column: 1/2;
- }
- 
- #next
- {
-     justify-self: end;
-     grid-column: 3/4;
- }
- 
- .slider
- {
-     max-width: 360px;
-     grid-area: 1/1/2/-1;
-     overflow: hidden;
-     order: 1;
- }
- 
- .slide
- {
-     display: none;
- }
- 
- .slide--active
- {
-     display: block;
-     order: 2;
- }
- 
- .caption
- {
-     font-size: 0.625em;
-     line-height: 1.6;
-     align-self: end;
-     width: 14.3em;
-     grid-column: 3/4;
- 
- }
- 
- 
-   /* ----slider---- */
+.gallery-grid,
+.slider.gallery-grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.gallery-grid {
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0em 0em;
+}
+
+.slider-grid {
+  display: grid;
+  grid-column: 1/4;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#back,
+#next {
+  border-radius: 10%;
+  width: 20px;
+  position: relative;
+  top: -400%;
+  cursor: pointer;
+}
+
+#back {
+  justify-self: start;
+  grid-column: 1/2;
+}
+
+#next {
+  justify-self: end;
+  grid-column: 3/4;
+}
+
+.slider {
+  max-width: 400px;
+  grid-area: 1/1/2/-1;
+  overflow: hidden;
+  order: 1;
+}
+
+.slide {
+  display: none;
+}
+
+.slide--active {
+  display: block;
+  order: 2;
+}
+
+.caption {
+  font-size: 0.625em;
+  line-height: 1.6;
+  align-self: end;
+  width: 14.3em;
+  grid-column: 3/4;
+}
+
+/* ----slider---- */
+
+section {
+  position: relative;
+}
+
+h1.title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-size: 2.5em;
+  width: 90%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h3.undertekst {
+  position: absolute;
+  top: 65%;
+  right: 1em;
+  font-size: 1.125em;
+  width: 95%;
+  text-align: right;
+  z-index: 1;
+  -webkit-text-stroke-width: 0.8px;
+}
+
+.Purple_man {
+  width: 200px;
+  height: auto;
+  left: 80%;
+  top: 27%;
+  transform: translateX(-50%);
+  position: absolute;
+  margin-top: 0;
+}
+
+.first_tekst {
+  width: 48%;
+  left: 0%;
+  position: relative;
+  text-align: start;
+  z-index: 2;
+  font-size: 1em;
+}
+
+.second_tekst {
+  text-align: start;
+  font-size: 1em;
+}
+
+h2 {
+  padding-top: 5%;
+  margin-top: 5%;
+}

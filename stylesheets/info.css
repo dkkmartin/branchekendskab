@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap%27');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+body {
+  background-color: #462069;
+}
+
+#wrapper {
+  margin: 0 auto;
+  max-width: 430px;
+}
+
+.header {
+  background-color: #462069;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
+
+.header__logo__con {
+  max-width: 100%;
+}
+
+.header__image {
+  width: 100%;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: #462069;
+  display: none;
+}
+
+.container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  text-align: center;
+  background-color: #583678;
+  color: #fd925c;
+  font-family: 'Exo', sans-serif;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px #000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: solid 2px #000;
+  width: 331px;
+  height: 94px;
+  font-weight: 700;
+}
+
+button:active {
+  background-color: hsla(271, 38%, 34%, 0.4);
+  color: hsla(20, 98%, 68%, 0.4);
+}
+
+.close {
+  height: 39px;
+  width: 39px;
+  margin-left: 90%;
+  cursor: pointer;
+}
+.close:active {
+  background-color: red;
+}
+
+.steder,
+.Praktisk {
+  border-bottom: 1px solid black;
+}
+
+main {
+  text-align: center;
+  font-size: 16;
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #462069;
+}
+
+h1,
+h2 {
+  color: #fd925c;
+  padding-bottom: 35px;
+  font-family: 'Exo', sans-serif;
+  font-size: 30px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+main {
+  color: #da98f1;
+}
+
+footer {
+  background: #140e26;
+  height: 90px;
+  display: flex;
+  justify-content: center; /* horizontally center items */
+  align-items: center; /* vertically center items */
+  text-align: center;
+}
+
+footer h4 {
+  color: #999;
+  font-family: 'Exo', sans-serif;
+  text-decoration: none;
+  font-size: 12px;
+  max-width: 140px;
+  word-break: normal;
+}
+
+footer img {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px; /* add some space between icons and text */
+}
+
+/* ----slider---- */
+
+.gallery-grid,
+.slider.gallery-grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.gallery-grid {
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0em 0em;
+}
+
+.slider-grid {
+  display: grid;
+  grid-column: 1/4;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#back,
+#next {
+  border-radius: 10%;
+  width: 20px;
+  position: relative;
+  top: -400%;
+  cursor: pointer;
+}
+
+#back {
+  justify-self: start;
+  grid-column: 1/2;
+}
+
+#next {
+  justify-self: end;
+  grid-column: 3/4;
+}
+
+.slider {
+  max-width: 400px;
+  grid-area: 1/1/2/-1;
+  overflow: hidden;
+  order: 1;
+}
+
+.slide {
+  display: none;
+}
+
+.slide--active {
+  display: block;
+  order: 2;
+}
+
+.caption {
+  font-size: 0.625em;
+  line-height: 1.6;
+  align-self: end;
+  width: 14.3em;
+  grid-column: 3/4;
+}
+
+/* ----slider---- */
+
+section {
+  position: relative;
+}
+
+h1.title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-size: 2.5em;
+  width: 90%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h3.undertekst {
+  position: absolute;
+  top: 65%;
+  right: 1em;
+  font-size: 1.125em;
+  width: 95%;
+  text-align: right;
+  z-index: 1;
+  -webkit-text-stroke-width: 0.8px;
+}
+
+.Purple_man {
+  width: 200px;
+  height: auto;
+  left: 80%;
+  top: 27%;
+  transform: translateX(-50%);
+  position: absolute;
+  margin-top: 0;
+}
+
+.first_tekst {
+  width: 48%;
+  left: 0%;
+  position: relative;
+  text-align: start;
+  z-index: 2;
+  font-size: 1em;
+}
+
+.second_tekst {
+  text-align: start;
+  font-size: 1em;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding: 2em 0;
+}
+
+.Praktisk {
+  padding-top: 5em;
+}
+
+.header__desktop {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  width: 99%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .Praktisk {
+    flex-direction: row;
+  }
+
+  .section__text__con2 {
+    text-align: end;
+    flex: 3;
+  }
+
+  .optagelse {
+    flex-direction: row-reverse;
+  }
+
+  .box__con {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 2%;
+  }
+
+  .fakta {
+    text-align: start;
+  }
+
+  .box__title {
+    font-size: 26px;
+  }
+
+  .section__text__con {
+    text-align: start;
+    flex: 3;
+  }
+
+  .section__image__con {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .steder {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .header__desktop {
+    display: block;
+  }
+
+  .header__desktop__nav {
+    display: flex;
+  }
+
+  .header__desktop__ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    font-family: 'Exo', sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: #fd925c;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .header__desktop__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .header__desktop__logo__con {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding: 0.5em 1em;
+    max-width: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    padding-top: 7em;
+  }
+
+  section {
+    max-width: 1000px;
+  }
+
+  .section__image__con {
+    margin: 0 auto;
+  }
+
+  h1,
+  h2 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}

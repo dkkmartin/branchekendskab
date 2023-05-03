@@ -1,31 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../stylesheets/Eksempler.css" />
+    <link rel="stylesheet" href="../stylesheets/eksempler.css" />
+    <script defer src="../js/burgerMenu.js"></script>
+    <script src="../js/eksempler-slider.js" defer></script>
+    <style></style>
     <title>Eksempler</title>
   </head>
 
   <body>
-    <header>
-      <h1>Eksempler på opgaver og kode</h1>
+    <header class="header">
+      <div class="header__logo__con">
+        <img class="header__image" src="../images/logo.webp" alt="" />
+      </div>
+      <div class="header__menu__con">
+        <img class="header__image" src="../images/Menu.svg" alt="" />
+      </div>
+      <nav class="container">
+        <img class="close" src="../images/Close.png" alt="closingButton" />
+        <ul>
+          <a href="../index.html"><button class="forsideMenuKnap">Forside</button></a>
+          <a href="../pages/hvadlaverman.html"><button>Hvad laver man</button></a>
+          <a href="../pages/praktisk-info.html"><button>Praktisk info</button></a>
+          <a href="../pages/jobmuligheder.html"><button>Job</button></a>
+          <a href="../pages/eksempler.html"><button>Eksempler</button></a>
+        </ul>
+      </nav>
+    </header>
+    <header class="header__desktop">
+      <nav class="header__desktop__nav">
+        <div class="header__desktop__logo__con">
+          <img class="header__desktop__logo" src="../images/logo.webp" alt="logo" />
+        </div>
+        <ul class="header__desktop__ul">
+          <li><a class="header__desktop__link" href="../index.html">Forside</a></li>
+          <li>
+            <a class="header__desktop__link" href="../pages/hvadlaverman.html">Hvad laver man</a>
+          </li>
+          <li>
+            <a class="header__desktop__link" href="../pages/praktisk-info.html">Praktisk info</a>
+          </li>
+          <li><a class="header__desktop__link" href="../pages/jobmuligheder.html">Job</a></li>
+          <li><a class="header__desktop__link" href="../pages/eksempler.html">Eksempler</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <div>
-        <section class="box">
-          <h3>Parasite</h3>
-          <img src="../images/Parasite pic with text.png" />
-          <p>
-            Parasite hjemmesiden var den første hjemmeside, på uddannelsen hvor eleveren blev
-            intruduceret til JavaScript.
-          </p>
-
-          <img src="../images/html-css-coding.webp" />
-        </section>
-      </div>
+      <section class="section__title">
+        <h1 class="title">Eksempler på opgaver og kode</h1>
+      </section>
+      <section class="section__block block--spilsite">
+        <div class="arrow__con">
+          <div class="img__con">
+            <img class="arrow__left" src="../images/arrow-left.png" alt="" />
+          </div>
+          <h2 class="title__h2">Spil site</h2>
+          <div class="img__con">
+            <img class="arrow__right" src="../images/arrow-right.png" alt="" />
+          </div>
+        </div>
+        <div class="img__con">
+          <img class="image" src="../images/spil-site.webp" alt="" />
+        </div>
+        <p class="img__para">
+          Spil siden er det første projekt vi fik på grundforløbet. Opgaven bestod på at lave en
+          side for spillet "INSIDE"
+        </p>
+        <div class="img__con">
+          <img class="image" src="../images/spilsite-code.svg" alt="" />
+        </div>
+        <p class="img__para">Her kan man se lidt af HTML koden brugt på projektet</p>
+      </section>
+      <section class="section__block block--parasite">
+        <div class="arrow__con">
+          <div class="img__con">
+            <img class="arrow__left" src="../images/arrow-left.png" alt="" />
+          </div>
+          <h2 class="title__h2">Parasite</h2>
+          <div class="img__con">
+            <img class="arrow__right" src="../images/arrow-right.png" alt="" />
+          </div>
+        </div>
+        <div class="img__con">
+          <img class="image" src="../images/film-site.webp" alt="" />
+        </div>
+        <p class="img__para">
+          Parasite projektet er den anden større opgave vi fik på grundforløbet. Opgaven bestod på
+          at lave en side for filmen "Parasite"
+        </p>
+        <div class="img__con">
+          <img class="image" src="../images/parasite-code.svg" alt="" />
+        </div>
+        <p class="img__para">Her kan man se lidt af HTML koden brugt på projektet</p>
+      </section>
+      <section class="section__block block--webavis">
+        <div class="arrow__con">
+          <div class="img__con">
+            <img class="arrow__left" src="../images/arrow-left.png" alt="" />
+          </div>
+          <h2 class="title__h2">Web avis</h2>
+          <div class="img__con">
+            <img class="arrow__right" src="../images/arrow-right.png" alt="" />
+          </div>
+        </div>
+        <div class="img__con">
+          <img class="image" src="../images/avis-site.webp" alt="" />
+        </div>
+        <p class="img__para">
+          Web avisen er det tredje projekt vi fik på grundforløbet. Opgaven bestod på at lave avis
+          på nettet
+        </p>
+        <div class="img__con">
+          <img class="image" src="../images/webavis-code.svg" alt="" />
+        </div>
+        <p class="img__para">Her kan man se lidt af javascript koden brugt på projektet</p>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <a href="https://www.facebook.com/" target="_blank"
+        ><img class="icons1" src="../images/Facebook.png" alt="Facebookicon"
+      /></a>
+      <a href="https://www.linkedin.com/" target="_blank"
+        ><img class="icons1" src="../images/LinkedIn.png" alt="LinkedInicon"
+      /></a>
+      <h4>Dette er et skoleprojekt Lavet for NEXT Uddannelsen København Copenhagen, Denmark</h4>
+      <a href="https://www.instagram.com/" target="_blank"
+        ><img class="icons2" src="../images/Instagram.png" alt="Instagramicon"
+      /></a>
+      <a href="https://www.twitter.com/" target="_blank"
+        ><img class="icons2" src="../images/Twitter.png" alt="Twittericon"
+      /></a>
+    </footer>
   </body>
 </html>

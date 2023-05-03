@@ -1,82 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheets/style2.css">
-    <link rel="stylesheet" href="stylesheets/home.css">
-    <title>Home</title>
-</head>
-<body>
-   
-        <header class="header">
-            <div class="header__logo__con">
-              <img class="header__image" src="images//logo.webp" alt="" />
-            </div>
-            <div class="header__menu__con">
-              <img class="header__image" src="images//Menu.svg" alt="" />
-            </div>
-          </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/index.css" />
+    <script defer src="js/slider.js"></script>
+    <script defer src="js/burgerMenu.js"></script>
+    <title>Web-udvikler</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo__con">
+        <img class="header__image" src="images/logo.webp" alt="logo" />
+      </div>
+      <div class="header__menu__con">
+        <img class="header__image" src="images/Menu.svg" alt="Burger_menu_icon" />
+      </div>
+      <nav class="container">
+        <div class="header__logo__con2">
+          <img class="header__image" src="images/logo.webp" alt="logo" />
+        </div>
+        <img class="close" src="images/Close.png" alt="closingButton" />
+        <ul>
+          <a href="index.html"><button class="forsideMenuKnap">Forside</button></a>
+          <a href="/pages/hvadlaverman.html"><button>Hvad laver man</button></a>
+          <a href="/pages/praktisk-info.html"><button>Praktisk info</button></a>
+          <a href="/pages/jobmuligheder.html"><button>Job</button></a>
+          <a href="/pages/eksempler.html"><button>Eksempler</button></a>
+        </ul>
+      </nav>
+    </header>
 
- 
-        <main>
-        <div id="wrapper">
-            <section>
-                <h1>Byg din fremtid med kode</h1>
-                <img src="images/Group_13.webp" alt="heroImg">
-                <h3>Uddannelser i webudvikling til næste generations tech-talenter</h3>
-            </section>
-            <section>
-                <h2>Hvad er en webudvikler?</h2>
-                <p>En webudvikler er en professionel, der bygger og vedligeholder websites ved at skabe både front-end (brugergrænseflade) og back-end (server-side) teknologier for at skabe funktionelle weboplevelser.</p>
-                <img src="images/" alt="">
-                <p>Dette inkluderer arbejde med HTML, CSS, JavaScript, databaser, serveropsætning og sikkerhed for at skabe effektive og brugervenlige websites.</p>
-            </section>
-            <section>
-                <h2>Frontend-udviklerens rolle i webudvikling</h2>
-                <img src="images//Dummy_PDSO_Create_hacking_room_a_men_inside_coding_on_laptop_bo_bd1259b3-a674-448b-8fe3-a9efb615a7bd(1) 1.png" alt="">
-                <p>En frontend-udvikler er ansvarlig for at opbygge det visuelle udseende og interaktive funktioner på en hjemmeside ved at bruge HTML, CSS og JavaScript til at oprette brugergrænseflader, designe layout, tilføje animationer og interaktionseffekter samt optimere hjemmesidens responsivitet på forskellige enheder.</p>
-            </section>
-            <section>
-                <h2>Back-end Udviklerens rolle i webudvikling</h2>
-                <img src="images//High_Server_room_icon_isometric_cables_tidy_purple_dark_blue_ef44027a-126e-4aa4-8563-ebf148205b10(1) 1.png" alt="">
-                <p>En backend-udvikler er ansvarlig for at håndtere server-side logik og databehandling, såsom at håndtere brugerforespørgsler, behandle data fra databaser, udføre beregninger og administrere brugeradgang ved hjælp af server-sprog som Python, Ruby, PHP eller Java.</p>
-            </section>
-            <section>
-                <h2>Eksempler på opgaver under uddannelsen</h2>
-                <article>
-                    <figure>
-                        <div class="gallery-grid">                                                 
-                            <div class="slider-grid">                                                     
-                                <div class="slider">
-                                    <img class="slide slide--active" src="images//" alt="b1">
-                                    <img class="slide" src="images//" alt="b2">
-                                    <img class="slide" src="images//" alt="b3">
-                                    <img class="slide" src="images//" alt="b4">
-                                </div>
-                                <div id="back"></div>
-                                <div id="next"></div>                                                         
-                                </div>
-                                <!-- slider-grid ends -->
-                    </figure>                                                       
-                </div>
-            </article>
-            </section> 
-        </div><!--wrapper end-->
-        </main>
+    <header class="header__desktop">
+      <nav class="header__desktop__nav">
+        <div class="header__desktop__logo__con">
+          <img class="header__desktop__logo" src="/images/logo.webp" alt="logo" />
+        </div>
+        <ul class="header__desktop__ul">
+          <li><a class="header__desktop__link" href="index.html">Forside</a></li>
+          <li>
+            <a class="header__desktop__link" href="/pages/hvadlaverman.html">Hvad laver man</a>
+          </li>
+          <li>
+            <a class="header__desktop__link" href="/pages/praktisk-info.html">Praktisk info</a>
+          </li>
+          <li><a class="header__desktop__link" href="/pages/jobmuligheder.html">Job</a></li>
+          <li><a class="header__desktop__link" href="/pages/eksempler.html">Eksempler</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <footer>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <h4>Dette er et skoleprojekt
-            Lavet for
-            NEXT Uddannelsen
-            København
-            Copenhagen, Denmark</h4>
-            <i class="fa-brands fa-square-instagram"></i>
-            <i class="fa-brands fa-square-twitter"></i>
-        </footer>
-   
-</body>
+    <main>
+      <section class="main__section hero__section">
+        <picture class="hero__picture">
+          <source
+            class="section__image section__image--big"
+            media="(min-width:500px)"
+            srcset="/images/hero-big.webp"
+          />
+          <img class="section__image" src="images/hero.webp" alt="heroImg" />
+        </picture>
+        <h1 class="title">Byg din fremtid med kode</h1>
+        <h3 class="undertekst">Uddannelser i webudvikling til næste generations tech-talenter</h3>
+      </section>
+
+      <div id="wrapper">
+        <section class="main__section">
+          <div class="section__text__con">
+            <h2 class="section__title">Hvad er en webudvikler?</h2>
+            <p class="section__para">
+              En webudvikler er en professionel, der bygger og vedligeholder websites ved at skabe
+              både front-end og back-end teknologier for at skabe funktionelle weboplevelser. Dette
+              inkluderer arbejde med HTML, CSS, JavaScript, databaser, serveropsætning og sikkerhed
+              for at skabe effektive og brugervenlige websites.
+            </p>
+          </div>
+          <div class="section__image__con">
+            <img
+              class="Purple_man section__image"
+              src="images/miowmiow_2Dvector_illustrationflat_purple_white_web_designer_907ebe67-2d15-4c1b-8bab-c70524e1eb45(1) 1.png"
+              alt="purple_white_web_designer"
+            />
+          </div>
+        </section>
+        <section class="main__section">
+          <div class="section__text__con">
+            <h2 class="section__title">Frontend-udviklerens rolle i webudvikling</h2>
+            <p class="section__para">
+              En frontend-udvikler er ansvarlig for at opbygge det visuelle udseende og interaktive
+              funktioner på en hjemmeside ved at bruge HTML, CSS og JavaScript til at oprette
+              brugergrænseflader, designe layout, tilføje animationer og interaktionseffekter samt
+              optimere hjemmesidens responsivitet på forskellige enheder.
+            </p>
+          </div>
+          <div class="section__image__con">
+            <img
+              class="section__image"
+              src="images//Dummy_PDSO_Create_hacking_room_a_men_inside_coding_on_laptop_bo_bd1259b3-a674-448b-8fe3-a9efb615a7bd(1) 1.png"
+              alt="coding_on_laptop"
+            />
+          </div>
+        </section>
+        <section class="main__section">
+          <div class="section__text__con">
+            <h2 class="section__title">Back-end Udviklerens rolle i webudvikling</h2>
+            <p class="section__para">
+              En backend-udvikler er ansvarlig for at håndtere server-side logik og databehandling,
+              såsom at håndtere brugerforespørgsler, behandle data fra databaser, udføre beregninger
+              og administrere brugeradgang ved hjælp af server-sprog som Python, Ruby, PHP eller
+              Java.
+            </p>
+          </div>
+          <div class="section__image__con">
+            <img
+              class="section__image"
+              src="images//High_Server_room_icon_isometric_cables_tidy_purple_dark_blue_ef44027a-126e-4aa4-8563-ebf148205b10(1) 1.png"
+              alt="High_Server_room"
+            />
+          </div>
+        </section>
+        <section class="main__section section__slider">
+          <h2 class="section__title">Eksempler på opgaver under uddannelsen</h2>
+          <div class="gallery-grid">
+            <div class="slider-grid">
+              <div id="back">
+                <img src="images/arrow-left.png" alt="leftArrow" />
+              </div>
+              <div class="slider">
+                <img class="slide slide--active" src="images/avis-site.webp" alt="b1" />
+                <img class="slide" src="images/film-site.webp" alt="b2" />
+                <img class="slide" src="images/spil-site.webp" alt="b3" />
+              </div>
+              <div id="next">
+                <img src="images/arrow-right.png" alt="rightArrow" />
+              </div>
+            </div>
+            <!-- slider-grid ends -->
+          </div>
+        </section>
+      </div>
+      <!--wrapper end-->
+    </main>
+
+    <footer>
+      <a href="https://www.facebook.com/" target="_blank"
+        ><img class="icons1" src="images/Facebook.png" alt="Facebookicon"
+      /></a>
+      <a href="https://www.linkedin.com/" target="_blank"
+        ><img class="icons1" src="images/LinkedIn.png" alt="LinkedInicon"
+      /></a>
+      <h4>Dette er et skoleprojekt Lavet for NEXT Uddannelsen København Copenhagen, Denmark</h4>
+      <a href="https://www.instagram.com/" target="_blank"
+        ><img class="icons2" src="images/Instagram.png" alt="Instagramicon"
+      /></a>
+      <a href="https://www.twitter.com/" target="_blank"
+        ><img class="icons2" src="images/Twitter.png" alt="Twittericon"
+      /></a>
+    </footer>
+  </body>
 </html>
