@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   background-color: #462069;
   display: flex;
@@ -168,6 +172,42 @@ main {
   left: 0.5em;
   width: 99%;
 }
+
+/* css kode til Til-Top knappen Start */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: solid 2px #ffffff; /* add borders */
+  outline: none; /* Remove outline */
+  background-color: #fd925c; /* Set a background color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0; /* none padding */
+  border-radius: 10px; /* Rounded corners */
+  width: 60px;
+  height: 60px;
+}
+
+#myBtn:hover {
+  scale: 1.1;
+  background-color: #fb712b; /* Add a dark-orange background on hover */
+  border: solid 2px #ffffff;
+}
+
+.arrowUp {
+  color: #000;
+  font-size: 50px;
+  text-shadow: none;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.arrowUp:hover {
+  color: #ffffff;
+}
+
+/* css kode til Til-Top Knappen Slut */
 
 @media only screen and (min-width: 1000px) {
   main {

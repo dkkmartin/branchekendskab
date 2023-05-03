@@ -21,3 +21,4 @@ arrowsLeft.forEach((arrow) => {
     sections[currentSection].style.display = 'flex';
   });
 });
+

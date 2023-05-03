@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../stylesheets/info.css" />
 
     <script src="../js/burgerMenu.js" defer></script>
+    <script defer src="../js/tiltopknap.js"></script>
     <title>Home</title>
   </head>
   <body>
@@ -49,6 +50,9 @@
       </header>
     </header>
     <main>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <p class="arrowUp">↑</p>
+      </button>
       <div id="wrapper">
         <section class="Praktisk">
           <div class="section__text__con">
@@ -79,7 +83,7 @@
             </p>
           </div>
           <div class="box__con">
-            <h2 class="box__title">Uddannelsessteder</h2>
+            <h2 class="box__title">Skoler</h2>
             <p>
               Next uddannelse København<br />
               Roskilde Tekniske skole<br />
