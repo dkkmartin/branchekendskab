@@ -33,6 +33,7 @@ footer img {
 }
 
 .header {
+  width: 100%;
   background-color: #462069;
   display: flex;
   justify-content: space-between;
@@ -93,6 +94,12 @@ button:active {
   font-size: 16px;
   font-family: 'JetBrains Mono', monospace;
   color: #da98f1;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .headline {
@@ -115,10 +122,6 @@ main {
   padding: 5em 0;
 }
 
-.del4 {
-  border: none;
-}
-
 .header__desktop {
   display: none;
   background-color: rgba(0, 0, 0, 0.2);
@@ -129,20 +132,13 @@ main {
   left: 0.5em;
   width: 99%;
 }
-.body {
-  display: flex;
-  flex-direction: column;
-  gap: 5em;
+
+.section__image__con {
+  max-width: 100%;
 }
 
-.body section {
-  display: flex;
-  align-items: center;
-  padding-bottom: 5em;
-}
-
-.body section:nth-child(even) {
-  flex-direction: row-reverse;
+.section__image__con img {
+  width: 100%;
 }
 
 .del1text,
@@ -152,30 +148,52 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  flex: 2;
 }
 
-.section__image__con {
-  max-width: 100%;
-  flex: 1;
-}
-
-.section__image__con img {
-  width: 100%;
+.body section {
+  padding-bottom: 3em;
 }
 
 @media only screen and (min-width: 1000px) {
+  .body {
+    max-width: 1000px;
+    text-align: start;
+  }
+
+  .body section {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5em;
+  }
+
+  .del1text,
+  .del2text,
+  .del3text,
+  .del4text {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    flex: 2;
+  }
+
+  .body section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .section__image__con {
+    max-width: 100%;
+    flex: 1;
+  }
+
   #wrapper {
-    max-width: 1440px;
+    max-width: 1000px;
   }
 
   .del1 img {
     max-height: 621px;
     max-width: 621px;
   }
-}
 
-@media only screen and (min-width: 1000px) {
   .header {
     display: none;
   }
@@ -231,5 +249,11 @@ main {
 
   p {
     font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+  .body {
+    max-width: 400px;
   }
 }

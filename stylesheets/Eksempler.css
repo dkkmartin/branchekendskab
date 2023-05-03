@@ -169,56 +169,6 @@ main {
   width: 99%;
 }
 
-/** SLIDER BLOCK END **/
-@media screen and (min-width: 801px) {
-  .container {
-    position: static;
-    height: auto;
-    background-color: transparent;
-    display: flex;
-  }
-  .header__menu__con,
-  .close {
-    display: none;
-  }
-
-  .header__logo__con {
-    display: none;
-  }
-
-  .header__logo__con2 {
-    display: block;
-  }
-
-  .header nav ul {
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    gap: 100px;
-    list-style: none;
-    justify-content: space-around;
-    justify-items: center;
-    background-color: #00000040;
-  }
-
-  button {
-    margin-right: 20px;
-    margin-top: 0;
-    margin-bottom: 0;
-    width: auto;
-    height: auto;
-    font-size: 1.5em;
-    border: none;
-    background-color: transparent;
-  }
-
-  button:hover {
-    background-color: #00000040;
-    border-radius: 8px;
-    color: #ff7530;
-  }
-}
-
 @media only screen and (min-width: 1000px) {
   main {
     padding-top: 10em;
@@ -280,5 +230,11 @@ main {
     padding: 0.5em 1em;
     max-width: 100%;
     border-right: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+  .section__block {
+    max-width: 500px;
   }
 }
