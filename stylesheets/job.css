@@ -109,6 +109,7 @@ button {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   color: var(--title-color);
+  font-size: 35px;
 }
 
 .section__title {

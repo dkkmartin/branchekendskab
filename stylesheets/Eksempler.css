@@ -111,7 +111,9 @@ h3 {
 
 /** SLIDER BLOCK **/
 .title {
-  font-size: 40px;
+  font-size: 35px;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .title__h2 {

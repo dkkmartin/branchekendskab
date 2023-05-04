@@ -108,7 +108,7 @@ button:active {
 
 .headline {
   color: #fd925c;
-  font-size: 50px;
+  font-size: 35px;
   font-family: 'Exo';
   font-style: normal;
   font-weight: 700;
@@ -159,6 +159,10 @@ main {
 }
 
 @media only screen and (min-width: 1000px) {
+  .headline {
+    font-size: 50px;
+  }
+
   .body {
     max-width: 1000px;
     text-align: start;
@@ -196,6 +200,10 @@ main {
   .del1 img {
     max-height: 621px;
     max-width: 621px;
+  }
+
+  .del4 {
+    text-align: center;
   }
 
   .header {

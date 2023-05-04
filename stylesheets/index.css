@@ -262,6 +262,10 @@ section {
   color: #ffffff;
 }
 
+.section__title {
+  font-size: 35px;
+}
+
 /* css kode til Til-Top Knappen Slut */
 
 @media only screen and (min-width: 500px) {
