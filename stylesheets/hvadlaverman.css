@@ -122,6 +122,11 @@ section {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
+.body,
+section .del4 {
+  border-bottom: none;
+}
+
 main {
   padding: 5em 0;
 }
